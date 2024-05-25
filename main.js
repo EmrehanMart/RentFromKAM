@@ -1,8 +1,13 @@
 
-const SignUp= document.getElementById("sign-up");
+const SignUp = document.getElementById("sign-up");
+const SignIn = document.getElementById("sign-in");
 
 
 SignUp.addEventListener("click", event=> {
     
-    window.open("Kayit Olma Sayfasi", "_blank","width=600", "height=500");
+    window.open("SignUp.html", "_blank");
+});
+
+SignIn.addEventListener("click", event=> {
+    window.open("SignIn.html", "_blank");
 });
