@@ -110,7 +110,7 @@ padding: 15px 100px;
     width: 100%;
     min-height: 100vh;
     position: relative;
-    background: url(CarBackground.png);
+    background: url(./images/CarBackground.png);
     background-repeat: no-repeat;
     background-position: center right;
     background-size: cover;
