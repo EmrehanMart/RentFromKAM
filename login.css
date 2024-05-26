@@ -1,0 +1,131 @@
+/* login.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 50%; /* Adjust width as needed */
+    max-width: 400px; /* Set a maximum width to keep it responsive */
+    background-color: #333;
+    padding: 3rem;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    margin-top: -2%;
+    margin-bottom: 2%;
+}
+
+.panel {
+    border: 1px solid #ffcc00;
+    border-radius: 8px;
+}
+
+.panel-heading {
+    background-color: #ffcc00;
+    color: #000;
+    padding: 1rem;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.panel-body {
+    padding: 2rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.label {
+    font-weight: bold;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+}
+
+.input-group input {
+    border: 1px solid #ffcc00;
+    border-radius: 4px;
+    padding: 0.75rem;
+    flex: 1;
+    background-color: #222;
+    color: #fff;
+}
+
+.input-group .input-group-btn {
+    margin-left: -1px;
+}
+
+.input-group .btn {
+    border-radius: 0 4px 4px 0;
+    background-color: #ffcc00;
+    color: #000;
+    border: none;
+    padding: 0.75rem 1.5rem;
+}
+
+.input-group .btn:hover {
+    background-color: #e6b800;
+}
+
+.btn-primary {
+    background-color: #ffcc00;
+    color: #000;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.25rem;
+}
+
+.btn-primary:hover {
+    background-color: #e6b800;
+}
+
+.text-danger {
+    color: #ff0000;
+}
+
+a {
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+label {
+    display: block;
+    margin-top: 1rem;
+}
+
+span {
+    font-size: 0.875rem; /* Reduced font size for span text */
+}
+
+/* New style for the back to home button */
+.btn-secondary {
+    background-color: #555;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+.btn-secondary:hover {
+    background-color: #444;
+}

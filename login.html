@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Employee Login | Car Rental </title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="container">
+        <div class="col-md-6 col-md-offset-3">
+            <label style="color: red;"><span> <?php echo $error;  ?> </span></label>
+            <div class="panel panel-primary">
+                <div class="panel-heading"> Login </div>
+                <div class="panel-body">
+
+                    <form action="" method="POST">
+
+                        <div class="row">
+                            <div class="form-group col-xs-12">
+                                <label for="client_username"><span class="text-danger" style="margin-right: 5px;">*</span> Username </label>
+                                <div class="input-group">
+                                    <input class="form-control" id="client_username" type="text" name="client_username" placeholder="Username" required="" autofocus="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="form-group col-xs-12">
+                                <label for="client_password"><span class="text-danger" style="margin-right: 5px;">*</span> Password </label>
+                                <div class="input-group">
+                                    <input class="form-control" id="client_password" type="password" name="client_password" placeholder="Password" required="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="form-group col-xs-12">
+                                <button class="btn btn-primary" name="submit" type="submit" value=" Login ">Submit</button>
+                            </div>
+                        </div>
+                        <label>or</label> <br>
+                        <label><a href="register.html">Create a new account</a></label>
+                    </form>
+
+                    <br>
+                    <a href="RentFromKAM.html" class="btn btn-secondary">Back to Home</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
