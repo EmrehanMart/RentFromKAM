@@ -1,7 +1,17 @@
 /* login.css */
+:root{
+    --main-color: #fe5b3d;
+    --second--color: #ffac38;
+    --text-color: #444;
+    --gradient: linear-gradient( #fe5b3d, #ffac37);
+}
 
 body {
     font-family: Arial, sans-serif;
+    background: url(./images/CarBackground.png);
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: cover;
     background-color: white;
     color: #fff;
     display: flex;
@@ -11,10 +21,101 @@ body {
     margin: 0;
 }
 
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 15px 100px;
+}
+
+.logo img{
+    width: 40px;
+}
+
+.navbar{
+    display: flex;
+}
+
+.navbar li {
+    list-style: none;
+    position: relative;
+}
+
+.navbar a{
+    font-size: 1rem;
+    padding: 10px 20px;
+    color: var(--text-color);
+    font-weight: 500; 
+}
+
+.navbar a::after{
+    content: "";
+    width: 0;
+    height: 3px;
+    background-color: #efc90d;
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    transition: 0.5s;
+}
+
+.navbar a:hover::after{
+    width: 100%;
+}
+
+#menu-icon{
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 10001;
+    display: none;    
+}
+
+.header-btn a{
+    padding: 10px 20px;
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+.header-btn .sign-in{
+    background: #474fa0;
+    color: #fff;
+    border-radius: 0.5rem;
+}
+
+.header-btn .sign-in:hover{
+    background-color: #ffac38;
+}
+
+.header-btn .sign-up{
+    background: #474fa0;
+    color: #fff;
+    border-radius: 0.5rem;
+}
+
+.header-btn .sign-up:hover{
+    background-color: #ffac38;
+}
+
+.text h1 {
+    margin: 0.5rem 25rem 25rem -3rem;
+    font-size: 4rem;
+    letter-spacing: 2px;
+}
+
+.text span {
+    color: #efc90d;
+}
+
 .container {
     width: 50%; /* Adjust width as needed */
     max-width: 400px; /* Set a maximum width to keep it responsive */
-    background-color: #333;
+    background-color: #352e2e;
     padding: 3rem;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
     border-radius: 8px;
